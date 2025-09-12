@@ -1,0 +1,40 @@
+{
+  "Tickets": [
+    {
+      "id": "706c7d03-4274-4d44-878e-6aacef6a4fda",
+      "title": "k mcocl",
+      "description": " ,mvk ",
+      "priority": "Medium",
+      "status": "Open",
+      "createdAt": "9/11/2025, 6:29:37 PM"
+    },
+    {
+      "id": "4ac726d4-7792-4178-aa95-366ddb44ea2c",
+      "title": "jbjk",
+      "description": "jbjub",
+      "priority": "Medium",
+      "status": "Resolved",
+      "createdAt": "9/12/2025, 12:44:25 AM"
+    }
+  ],
+  "users": [
+    {
+      "id": "f6c6",
+      "email": "sakshi@gmail.com",
+      "password": "123456",
+      "role": "admin"
+    },
+    {
+      "id": "62ca",
+      "email": "sakshipriya@gmail.com",
+      "password": "1234567",
+      "role": "user"
+    },
+    {
+      "id": "0061",
+      "email": "saki@gmail.com",
+      "password": "123456",
+      "role": "user"
+    }
+  ]
+}
