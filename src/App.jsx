@@ -17,9 +17,9 @@ function App() {
       <ToastContainer position="top-right" autoClose={3000} />
       <div className=" bg-gradient-to-rfrom-[#3D52A0] via-[#7091E6] to-[#EDE8F5] p-4 min-h-screen">
         <Routes>
-          {/* <Route path="/" element={<Navigate to="/login" />} />
+          <Route path="/" element={<Navigate to="/login" />} />
           <Route path="/signUp" element={<Signup />} />
-          <Route path="/login" element={<Login />} />  */}
+          <Route path="/login" element={<Login />} /> 
           <Route path="/dashboard" element={<Dashboard />  }/>
           <Route path="/view/:id" element={<TicketDetails />  }/>
           <Route path="/update/:id" element={<UpdateTicket /> }/>
