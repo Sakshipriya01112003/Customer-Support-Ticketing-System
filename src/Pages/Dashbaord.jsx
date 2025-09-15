@@ -3,6 +3,7 @@ import TicketList from "../components/TicketList";
 import { useNavigate } from "react-router-dom";
 import axios from 'axios'
 import { Search, Menu, X, Plus, LogOut, Ticket, Filter, RefreshCw } from "lucide-react";
+import Footer from "./Footer";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -89,8 +90,9 @@ const Dashboard = () => {
   };
 
   return (
+    <>
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 container mx-auto">
-      <nav className="w-full bg-white/90 shadow-lg border-b border-slate-200/50 sticky top-0 z-50 container mx-auto">
+       <nav className="w-full bg-white/90 shadow-lg border-b border-slate-200/50 sticky top-0 z-50 container mx-auto">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
     
@@ -100,7 +102,7 @@ const Dashboard = () => {
                 <Ticket className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                <h1 className="text-lg font-medium bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
                   Customer Support
                 </h1>
                 <p className="text-xs text-slate-500 font-medium">
@@ -250,7 +252,9 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-      </nav>
+      </nav> 
+
+
 
       {/* TicketSection */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -274,6 +278,8 @@ const Dashboard = () => {
         )}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 

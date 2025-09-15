@@ -8,7 +8,8 @@ import CreateTicket from './Pages/CreateTicket.jsx';
 import UpdateTicket from './Pages/UpdateTicket.jsx';
 import Signup from './Pages/SignUp.jsx';   
 import Login from './Pages/Login.jsx'; 
-import TicketDetails from "./components/TicketDetails.jsx";  
+import TicketDetails from "./components/TicketDetails.jsx"; 
+ 
 
 function App() {
   return (
