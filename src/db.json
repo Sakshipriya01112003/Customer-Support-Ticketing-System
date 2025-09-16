@@ -368,6 +368,12 @@
       "email": "ok@gmail.com",
       "password": "1234567",
       "role": "user"
+    },
+    {
+      "id": "6e91",
+      "email": "shruti@gmail.com",
+      "password": "1234567",
+      "role": "user"
     }
   ]
 }
