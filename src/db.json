@@ -1,12 +1,15 @@
 {
   "Tickets": [
     {
-      "id": "9646374f-2b90-4822-bfdd-9148b005ee7d",
       "title": "kh",
       "description": "khygtfrdeswaq",
       "priority": "Low",
       "status": "In Progress",
-      "createdAt": "9/15/2025, 11:19:37 AM"
+      "comments": [],
+      "newComment": "",
+      "createdAt": "9/15/2025, 11:19:37 AM",
+      "updatedAt": "9/16/2025, 10:36:47 AM",
+      "id": "9646374f-2b90-4822-bfdd-9148b005ee7d"
     },
     {
       "id": "15853d0c-fc96-4dc7-91c3-16e9b64bcfdd",
@@ -113,36 +116,12 @@
       "createdAt": "9/15/2025, 5:12:18 PM"
     },
     {
-      "id": "eae50325-6ae0-4ef2-b44d-ee439ee958b0",
-      "title": "hiiiiiiiiiiiiiiiiiiiiiii",
-      "description": "byyyyyyyyyyyyyyyyyyyyyyyyyyy",
-      "priority": "Low",
-      "status": "Open",
-      "createdAt": "9/15/2025, 5:13:02 PM"
-    },
-    {
-      "id": "2d1f6cee-1096-42e1-9bd3-14e23b4d96dc",
-      "title": "hiiiiiiiiiiiiiiiiiiiiiii",
-      "description": "byyyyyyyyyyyyyyyyyyyyyyyyyyy",
-      "priority": "Low",
-      "status": "Open",
-      "createdAt": "9/15/2025, 5:13:04 PM"
-    },
-    {
       "id": "c2dfc3f2-ba51-4f19-904f-8fca35073d6c",
       "title": "hiiiiiiiiiiiiiiiiiiiiiii",
       "description": "byyyyyyyyyyyyyyyyyyyyyyyyyyy",
       "priority": "Low",
       "status": "Open",
       "createdAt": "9/15/2025, 5:13:05 PM"
-    },
-    {
-      "id": "157617bd-bff4-40bc-8d33-b7d5f1a91946",
-      "title": "hiiiiiiiiiiiiiiiiiiiiiii",
-      "description": "byyyyyyyyyyyyyyyyyyyyyyyyyyy",
-      "priority": "Low",
-      "status": "Open",
-      "createdAt": "9/15/2025, 5:13:06 PM"
     },
     {
       "id": "1e0bdc38-6e44-4bb5-b86a-a0b102f48708",
@@ -185,55 +164,12 @@
       "createdAt": "9/15/2025, 5:13:12 PM"
     },
     {
-      "id": "e738ddc9-33d4-40bd-8340-c9c363f67477",
-      "title": "hiiiiiiiiiiiiiiiiiiiiiii",
-      "description": "byyyyyyyyyyyyyyyyyyyyyyyyyyymmkhug",
-      "priority": "Medium",
-      "status": "Open",
-      "createdAt": "9/15/2025, 5:13:16 PM"
-    },
-    {
-      "id": "83215cf7-4eaa-4c95-92d0-c8c02e753c0a",
-      "title": "hiiiiiiiiiiiiiiiiiiiiiii",
-      "description": "byyyyyyyyyyyyyyyyyyyyyyyyyyymmkhug",
-      "priority": "Medium",
-      "status": "Open",
-      "createdAt": "9/15/2025, 5:13:17 PM"
-    },
-    {
-      "id": "8c801108-cd49-492e-9c27-23ba822a9128",
-      "title": "hiiiiiiiiiiiiiiiiiiiiiii",
-      "description": "byyyyyyyyyyyyyyyyyyyyyyyyyyymmkhug",
-      "priority": "Medium",
-      "status": "Open",
-      "createdAt": "9/15/2025, 5:15:02 PM"
-    },
-    {
       "id": "3b3627c3-c8e0-441a-ac47-ab0cae4fa7d3",
       "title": "mmkjhugy",
       "description": ";poiuytrfgc",
       "priority": "Low",
       "status": "Open",
       "createdAt": "9/15/2025, 5:16:05 PM"
-    },
-    {
-      "title": "lkjhgyt",
-      "description": ",lkjhuygtdf",
-      "priority": "Low",
-      "status": "Open",
-      "comments": [],
-      "newComment": "",
-      "createdAt": "9/15/2025, 5:49:30 PM",
-      "updatedAt": "9/15/2025, 6:13:58 PM",
-      "id": "3e0cf0d8-e0e3-4812-97f5-7816afe6c181"
-    },
-    {
-      "id": "607d6b42-5368-4f79-a23b-5dba10ee43d1",
-      "title": "lkjhgyt",
-      "description": ",lkjhuygtdf",
-      "priority": "Low",
-      "status": "Open",
-      "createdAt": "9/15/2025, 5:49:32 PM"
     },
     {
       "id": "cfe29842-f1ba-4faa-898d-156301f96dd7",
@@ -386,6 +322,14 @@
       "priority": "Low",
       "status": "Open",
       "createdAt": "9/15/2025, 6:04:34 PM"
+    },
+    {
+      "id": "dc0ebb29-ba49-49d5-8c80-5d04bdaef155",
+      "title": ",njhgy",
+      "description": "lkoiu8y7hgb",
+      "priority": "Low",
+      "status": "Open",
+      "createdAt": "9/15/2025, 7:05:25 PM"
     }
   ],
   "users": [
@@ -405,6 +349,24 @@
       "id": "0061",
       "email": "saki@gmail.com",
       "password": "123456",
+      "role": "user"
+    },
+    {
+      "id": "b644",
+      "email": "omi@gmail.com",
+      "password": "123456",
+      "role": "user"
+    },
+    {
+      "id": "d548",
+      "email": "omivorus@gmail.com",
+      "password": "123456",
+      "role": "user"
+    },
+    {
+      "id": "2f80",
+      "email": "ok@gmail.com",
+      "password": "1234567",
       "role": "user"
     }
   ]

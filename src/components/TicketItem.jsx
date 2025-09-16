@@ -116,10 +116,10 @@ const TicketItemRow = ({ ticket, onDelete }) => {
         {new Date(ticket.createdAt).toLocaleString()}
       </td>
       <td className="px-4 py-4 sm:py-6 whitespace-nowrap text-sm sm:text-base">
-        <div className="flex gap-3 items-center flex-wrap">
+        <div className="flex flex-col gap-3 items-center flex-wrap ">
          <Tippy content="View">
            <button
-            className="text-blue-600 hover:text-blue-900 w-5 h-5 sm:w-5 sm:h-5 flex items-center justify-center"
+            className="text-blue-600 hover:text-blue-900 w-5 h-5 sm:w-5 sm:h-5 flex items-center justify-center cursor-pointer"
             onClick={handleView}
           >
             <FaEye className="w-full h-full" />
@@ -127,7 +127,7 @@ const TicketItemRow = ({ ticket, onDelete }) => {
          </Tippy>
          <Tippy content="Update">
            <button
-            className="text-green-600 hover:text-green-900 w-5 h-5 sm:w-5 sm:h-5 flex items-center justify-center"
+            className="text-green-600 hover:text-green-900 w-5 h-5 sm:w-5 sm:h-5 flex items-center justify-center cursor-pointer"
             onClick={handleUpdate}
           >
             <FaEdit className="w-full h-full" />
@@ -135,7 +135,7 @@ const TicketItemRow = ({ ticket, onDelete }) => {
          </Tippy>
           <Tippy content="Delete">
              <button
-            className="text-red-600 hover:text-red-900 w-5 h-5 sm:w-5 sm:h-5 flex items-center justify-center"
+            className="text-red-600 hover:text-red-900 w-5 h-5 sm:w-5 sm:h-5 flex items-center justify-center cursor-pointer"
             onClick={handleDelete}
           >
             <FaTrashAlt className="w-full h-full" />

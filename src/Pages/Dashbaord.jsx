@@ -98,11 +98,11 @@ const Dashboard = () => {
     
            {/* icon */}
             <div className="flex items-center gap-3">
-              <div className="p-2.5 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 shadow-lg">
-                <Ticket className="w-6 h-6 text-white" />
+              <div className="p-2.5 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 shadow-lg cursor-pointer">
+                <Ticket className="w-6 h-6 text-white cursor-pointer" />
               </div>
               <div>
-                <h1 className="text-lg font-medium bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                <h1 className="text-lg font-medium bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent cursor-pointer">
                   Customer Support
                 </h1>
                 <p className="text-xs text-slate-500 font-medium">
@@ -174,20 +174,20 @@ const Dashboard = () => {
                 <button
                   onClick={refreshTickets}
                   disabled={loading}
-                  className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-800 hover:bg-slate-100 rounded-lg transition-all duration-200 disabled:opacity-50">
+                  className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-800 hover:bg-slate-100 rounded-lg transition-all duration-200 disabled:opacity-50 cursor-pointer">
                   <RefreshCw className={`w-4 h-4 `} />
                   Refresh
                 </button>
 
                 <button
                   onClick={() => navigate("/create")}
-                  className="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-sm font-medium rounded-lg hover:from-blue-600 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transform hover:scale-105 transition-all duration-200 shadow-lg">
+                  className="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-sm font-medium rounded-lg hover:from-blue-600 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transform hover:scale-105 transition-all duration-200 shadow-lg cursor-pointer">
                   <Plus className="w-4 h-4" />
                   New Ticket
                 </button>
 
         
-                <button className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-slate-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all duration-200">
+                <button className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-slate-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all duration-200 cursor-pointer">
                   <LogOut className="w-4 h-4" />
                   Logout
                 </button>
@@ -230,7 +230,7 @@ const Dashboard = () => {
                   </button>
                 )}
                 
-                <button onClick={refreshTickets} disabled={loading} className="flex items-center justify-center gap-2 px-3 py-2.5 text-sm font-medium text-slate-600 hover:text-slate-800 hover:bg-slate-100 border border-slate-200 rounded-lg transition-all duration-200 disabled:opacity-50">
+                <button onClick={refreshTickets} disabled={loading} className="flex items-center justify-center gap-2 px-3 py-2.5 text-sm font-medium text-slate-600 hover:text-slate-800 hover:bg-slate-100 border border-slate-200 rounded-lg transition-all duration-200 disabled:opacity-50 cursor-pointer">
                 <RefreshCw className={`w-4 h-4`} />
                   Refresh
                 </button>
@@ -239,12 +239,12 @@ const Dashboard = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <button
                   onClick={() => navigate("/create")}
-                  className="flex items-center justify-center gap-2 px-4 py-2.5 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-sm font-medium rounded-lg hover:from-blue-600 hover:to-indigo-700 transition-all duration-200 shadow-lg">
+                  className="flex items-center justify-center gap-2 px-4 py-2.5 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-sm font-medium rounded-lg hover:from-blue-600 hover:to-indigo-700 transition-all duration-200 shadow-lg cursor-pointer">
                   <Plus className="w-4 h-4" />
                   New Ticket
                 </button>
 
-                <button className="flex items-center justify-center gap-2 px-3 py-2.5 text-sm font-medium text-slate-600 hover:text-red-600 hover:bg-red-50 border border-slate-200 rounded-lg transition-all duration-200" onClick={handleLogOut}>
+                <button className="flex items-center justify-center gap-2 px-3 py-2.5 text-sm font-medium text-slate-600 hover:text-red-600 hover:bg-red-50 border border-slate-200 rounded-lg transition-all duration-200 cursor-pointer" onClick={handleLogOut}>
                   <LogOut className="w-4 h-4"  />
                   Logout
                 </button>

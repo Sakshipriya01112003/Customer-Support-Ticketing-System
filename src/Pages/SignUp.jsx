@@ -5,17 +5,23 @@ import * as Yup from "yup";
 import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Mail, Lock, User, Users, PlusCircle } from "lucide-react";
+import { Loader2,Mail, Lock, User, Users, PlusCircle } from "lucide-react";
 
 const Signup = () => {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate('/login')
+    navigate('/login');
   }
 
   const validationSchema = Yup.object({
     email: Yup.string().email("Invalid email format").required("Email is required"),
-    password: Yup.string().min(6, "Password must be at least 6 characters").required("Password is required"),
+    password: Yup.string().min(6, "Password must be at least 6 characters")
+    .required("Password is required"),
+    // .matches(/[A-Z]/, "Password must contain at least one uppercase letter")
+    // .matches(/[a-z]/, "Password must contain at least one lowercase letter")
+    // .matches(/\d/, "Password must contain at least one number")
+    // .matches(/[!@#$%^&*(),.?":{}|<>]/, "Password must contain at least one special character")
+    // .max(128, "Password cannot exceed 128 characters"),
     role: Yup.string().oneOf(["admin", "user"], "Select a valid role").required("Role is required"),
   });
 
@@ -72,10 +78,8 @@ const Signup = () => {
               <div>
                 <label className="block text-gray-700 font-medium mb-1">Email Address</label>
                 <div className="relative">
-                  <Field
-                    type="email"
-                    name="email"
-                    placeholder="you@example.com"
+                  <Field type="email" name="email"
+                    placeholder="I@example.com"
                     className="w-full pl-10 pr-3 py-2 border rounded-lg focus:ring-2 focus:ring-green-400 focus:border-green-400 outline-none text-sm"
                   />
                   <Mail className="absolute left-3 top-2.5 w-5 h-5 text-gray-400" />
@@ -117,14 +121,10 @@ const Signup = () => {
               </div>
 
               {/* Submit Button */}
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-2.5 rounded-lg shadow-md transition disabled:opacity-50 disabled:cursor-not-allowed"
-              >
+              <button type="submit" disabled={isSubmitting} className="w-full flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-2.5 rounded-lg shadow-md transition disabled:opacity-50 disabled:cursor-not-allowed">
                 {isSubmitting ? (
                   <div className="flex items-center gap-2">
-                    <Loader className="w-5 h-5 animate-spin" />
+                    <Loader2 className="w-5 h-5 animate-spin" />
                     Creating...
                   </div>
                 ) : (
