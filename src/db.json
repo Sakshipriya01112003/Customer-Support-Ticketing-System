@@ -1,17 +1,6 @@
 {
   "Tickets": [
     {
-      "title": "kh",
-      "description": "khygtfrdeswaq",
-      "priority": "Low",
-      "status": "In Progress",
-      "comments": [],
-      "newComment": "",
-      "createdAt": "9/15/2025, 11:19:37 AM",
-      "updatedAt": "9/16/2025, 10:36:47 AM",
-      "id": "9646374f-2b90-4822-bfdd-9148b005ee7d"
-    },
-    {
       "id": "15853d0c-fc96-4dc7-91c3-16e9b64bcfdd",
       "title": "y3wertyuio",
       "description": ",mnjhgfdresw",
@@ -330,6 +319,30 @@
       "priority": "Low",
       "status": "Open",
       "createdAt": "9/15/2025, 7:05:25 PM"
+    },
+    {
+      "id": "b0eeb4c9-1a1c-4045-aa06-8f0d3530c1c1",
+      "title": "v;lkbojin",
+      "description": "cofkjignvkm",
+      "priority": "Low",
+      "status": "Open",
+      "createdAt": "9/16/2025, 6:34:18 PM"
+    },
+    {
+      "id": "28c65e76-a196-48f2-931c-2f860681de57",
+      "title": "djugfhvijk",
+      "description": "ckifyu7tduij",
+      "priority": "Low",
+      "status": "Open",
+      "createdAt": "9/16/2025, 7:22:04 PM"
+    },
+    {
+      "id": "de87131e-d2f4-4ae5-ba27-d95f2458eca5",
+      "title": "Alias non incidunt ",
+      "description": "Ex quo itaque sint n",
+      "priority": "Low",
+      "status": "Open",
+      "createdAt": "9/16/2025, 7:51:23 PM"
     }
   ],
   "users": [
@@ -373,6 +386,18 @@
       "id": "6e91",
       "email": "shruti@gmail.com",
       "password": "1234567",
+      "role": "user"
+    },
+    {
+      "id": "4bfc",
+      "email": "priya@gmail.com",
+      "password": "12345678",
+      "role": "user"
+    },
+    {
+      "id": "bf00",
+      "email": "kr@gmail.com",
+      "password": "12345678",
       "role": "user"
     }
   ]

@@ -89,17 +89,17 @@ const Dashboard = () => {
 
   return (
     <>
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 container mx-auto">
-       <nav className="w-full bg-white/90 shadow-lg border-b border-slate-200/50 sticky top-0 z-50 container mx-auto">
-        <div className="mx-auto px-4 sm:px-6 lg:px-8">
+    <div className=" bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 container mx-auto">
+       <nav className=" bg-white/90 shadow-lg border-b border-slate-200/50 sticky top-0 z-50">
+        <div className=" px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
            {/* icon */}
             <div className="flex items-center gap-3">
               <div className="p-2.5 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 shadow-lg cursor-pointer">
                 <Ticket className="w-6 h-6 text-white cursor-pointer" />
               </div>
-              <div>
-                <h1 className="text-lg font-medium bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent cursor-pointer">Customer Support</h1>
+              <div className="mb-1">
+                <h1 className=" md:text-sm md:font-nano  text-lg font-medium bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent cursor-pointer">Customer Support</h1>
                 <p className="text-xs text-slate-500 font-medium">Ticketing System </p>
               </div>
             </div>
@@ -231,7 +231,7 @@ const Dashboard = () => {
 
 
       {/* TicketSection */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className=" px-4 sm:px-6 py-8">
         <div className="mb-6 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-slate-20 shadow-sm">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-6">
