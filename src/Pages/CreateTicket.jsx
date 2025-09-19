@@ -2,11 +2,10 @@ import React from "react";
 import TicketForm from "../components/TicketForm";
 import { useNavigate } from "react-router-dom";
 
-const CreateTicket = ({ addTicket }) => {
+const CreateTicket = () => {
   const navigate = useNavigate();
 
   const handleSubmit = (ticket) => {
-    addTicket(ticket);
     navigate("/dashboard");
   };
 
