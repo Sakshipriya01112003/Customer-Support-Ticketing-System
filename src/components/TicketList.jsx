@@ -3,8 +3,10 @@ import React from "react";
 
 const TicketList = ({ tickets, onDelete }) => {
   return (
+    <>
+    <h1 className="text-center text-4xl font-extrabold m-4">Tickets</h1>
     <div className="overflow-x-auto">
-      <h1 className="text-center text-4xl font-extrabold m-4">Tickets</h1>
+      
       <table className="min-w-full divide-y divide-gray-200">
         <thead className="bg-gray-100">
           <tr>
@@ -32,6 +34,7 @@ const TicketList = ({ tickets, onDelete }) => {
         </tbody>
       </table>
     </div>
+    </>
   );
 };
 
