@@ -8,6 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 
+
 const TicketForm = ({ onSubmit }) => {
   const [submittedTicket, setSubmittedTicket] = useState(null);
   const navigate = useNavigate();
@@ -27,7 +28,7 @@ const TicketForm = ({ onSubmit }) => {
       description: Yup.string()
       .trim()
       .required("Description is required")
-      .min(10, "Description must be at least 10 characters long"),
+      .min(5, "Description must be at least 5 characters long"),
       priority: Yup.string().required("Priority is required"),
       status: Yup.string().required("Status is required"),
     }),
@@ -72,9 +73,7 @@ const TicketForm = ({ onSubmit }) => {
               <label className="block text-gray-700 font-medium mb-1">
                 Title
               </label>
-              <input
-                type="text"
-                name="title"
+              <input type="text" name="title"
                 value={formik.values.title}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -89,18 +88,9 @@ const TicketForm = ({ onSubmit }) => {
             </div>
 
             <div>
-              <label className="block text-gray-700 font-medium mb-1">
-                Description
-              </label>
-              <textarea
-                name="description"
-                value={formik.values.description}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                required
-                rows="4"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-              />
+              <label className="block text-gray-700 font-medium mb-1"> Description </label>
+              <textarea name="description" value={formik.values.description} onChange={formik.handleChange}
+                onBlur={formik.handleBlur} required rows="4" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"/>
               {formik.touched.description && formik.errors.description && (
                 <div className="text-red-500 text-sm mt-1">
                   {formik.errors.description}
@@ -112,13 +102,9 @@ const TicketForm = ({ onSubmit }) => {
               <label className="block text-gray-700 font-medium mb-1">
                 Priority
               </label>
-              <select
-                name="priority"
-                value={formik.values.priority}
-                onChange={formik.handleChange}
+              <select name="priority" value={formik.values.priority} onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-              >
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
                 <option>Low</option>
                 <option>Medium</option>
                 <option>High</option>

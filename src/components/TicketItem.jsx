@@ -51,8 +51,7 @@ const TicketItemRow = ({ ticket, onDelete }) => {
                 closeToast();
               }}
             >Yes</button>
-            <button
-              className="bg-gray-400 text-white px-3 py-1 rounded"
+            <button className="bg-gray-400 text-white px-3 py-1 rounded"
               onClick={closeToast}
             >No</button>
           </div>
@@ -126,18 +125,14 @@ const TicketItemRow = ({ ticket, onDelete }) => {
           </button>
          </Tippy>
          <Tippy content="Update">
-           <button
-            className="text-green-600 hover:text-green-900 w-5 h-5 sm:w-5 sm:h-5 flex items-center justify-center cursor-pointer"
-            onClick={handleUpdate}
-          >
+           <button className="text-green-600 hover:text-green-900 w-5 h-5 sm:w-5 sm:h-5 flex items-center justify-center cursor-pointer"
+            onClick={handleUpdate}>
             <FaEdit className="w-full h-full" />
           </button>
          </Tippy>
           <Tippy content="Delete">
-             <button
-            className="text-red-600 hover:text-red-900 w-5 h-5 sm:w-5 sm:h-5 flex items-center justify-center cursor-pointer"
-            onClick={handleDelete}
-          >
+             <button className="text-red-600 hover:text-red-900 w-5 h-5 sm:w-5 sm:h-5 flex items-center justify-center cursor-pointer"
+            onClick={handleDelete} >
             <FaTrashAlt className="w-full h-full" />
           </button>
           </Tippy>

@@ -112,7 +112,7 @@ const Dashboard = () => {
             </button>
 
               {/* Main*/}
-            <div className="hidden md:flex items-center gap-4">
+            <div className="hidden lg:flex items-center gap-4">
               {/* Search */}
               <div className="flex items-center gap-3">
                 <div className="relative group ">
@@ -231,7 +231,7 @@ const Dashboard = () => {
 
 
       {/* TicketSection */}
-      <div className=" px-4 sm:px-6 py-8">
+      <div className=" px-4 sm:px-6 md:container mx-auto py-8">
         <div className="mb-6 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-slate-20 shadow-sm">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-6">
