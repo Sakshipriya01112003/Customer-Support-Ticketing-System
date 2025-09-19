@@ -7,7 +7,7 @@ const CreateTicket = ({ addTicket }) => {
 
   const handleSubmit = (ticket) => {
     addTicket(ticket);
-    navigate("/dashbaord");
+    navigate("/dashboard");
   };
 
   return (
